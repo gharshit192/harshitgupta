@@ -1,0 +1,135 @@
+<!--{% extends 'base.html' %}-->
+
+<!--{% block content %}-->
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<h1>Products</h1>
+<body>
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="leftMenu">
+  <button onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+
+
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge w3-left" onclick="openLeftMenu()">&#9776;</button>
+  <div class="w3-container">
+    <h1>My Page</h1>
+  </div>
+    <script>
+function openLeftMenu() {
+  document.getElementById("leftMenu").style.display = "block";
+}
+
+function closeLeftMenu() {
+  document.getElementById("leftMenu").style.display = "none";
+}
+
+
+</script>
+<!--</div>-->
+<!--<div class="navbar">-->
+<!--    <a href="#home">Home</a>-->
+<!--    <a href="#news">Beverages</a>-->
+<!--    <a href="#home">Baby Care</a>-->
+<!--    <a href="#news">Beauty & Hygiene</a>-->
+<!--    <a href="#home">Bakery</a>-->
+<!--    <a href="#news">Contact</a>-->
+<!--</div>-->
+</body>
+<!--<div class="row">-->
+<!--    {% for product in products %}-->
+<!--    <div class="col">-->
+<!--        <div class="card" style="width: 18rem;">-->
+<!--            <img class="card-img-top" src={{ product.image_url }} alt="Card image cap">-->
+<!--            <div class="card-body">-->
+<!--                <h5 class="card-title">{{ product.name}}</h5>-->
+<!--                <p class="card-text">₹{{ product.price }}</p>-->
+<!--                <a href="#" class="btn btn-primary">Add to cart</a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    {% endfor %}-->
+<!--</div>-->
+</html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<style>-->
+<!--body {-->
+<!--  font-family: Arial, Helvetica, sans-serif;-->
+<!--}-->
+
+<!--.navbar {-->
+<!--  overflow: hidden;-->
+<!--  background-color: #333;-->
+<!--}-->
+
+<!--.navbar a {-->
+<!--  float: left;-->
+<!--  font-size: 16px;-->
+<!--  color: white;-->
+<!--  text-align: center;-->
+<!--  padding: 14px 16px;-->
+<!--  text-decoration: none;-->
+<!--}-->
+
+<!--.dropdown {-->
+<!--  float: left;-->
+<!--  overflow: hidden;-->
+<!--}-->
+
+<!--.dropdown .dropbtn {-->
+<!--  font-size: 16px;-->
+<!--  border: none;-->
+<!--  outline: none;-->
+<!--  color: white;-->
+<!--  padding: 14px 16px;-->
+<!--  background-color: inherit;-->
+<!--  font-family: inherit;-->
+<!--  margin: 0;-->
+<!--}-->
+
+<!--.navbar a:hover, .dropdown:hover .dropbtn {-->
+<!--  background-color: red;-->
+<!--}-->
+
+<!--.dropdown-content {-->
+<!--  display: none;-->
+<!--  position: absolute;-->
+<!--  background-color: #f9f9f9;-->
+<!--  min-width: 160px;-->
+<!--  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);-->
+<!--  z-index: 1;-->
+<!--}-->
+
+<!--.dropdown-content a {-->
+<!--  float: none;-->
+<!--  color: black;-->
+<!--  padding: 12px 16px;-->
+<!--  text-decoration: none;-->
+<!--  display: block;-->
+<!--  text-align: left;-->
+<!--}-->
+
+<!--.dropdown-content a:hover {-->
+<!--  background-color: #ddd;-->
+<!--}-->
+
+<!--.dropdown:hover .dropdown-content {-->
+<!--  display: block;-->
+<!--}-->
+
+<!--</style>-->
+<!--
+<ul>
+
+        <li>{{ product.name }}( ₹{{ product.price }})</li>
+
+</ul>
+-->
+
+<!--{% endblock %}-->
