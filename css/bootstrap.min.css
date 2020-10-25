@@ -211,7 +211,7 @@ a {
 }
 
 a:hover {
-    color: #0056b3;
+    color:  #ccccff;
     text-decoration: underline
 }
 
@@ -584,7 +584,7 @@ code {
     padding: .2rem .4rem;
     font-size: 90%;
     color: #bd4147;
-    background-color: #f8f9fa;
+    background-color:  #ccccff;
     border-radius: .25rem
 }
 
@@ -1482,16 +1482,16 @@ pre code {
 .table-secondary,
 .table-secondary>td,
 .table-secondary>th {
-    background-color: #dddfe2
+    background-color:  #ccccff
 }
 
 .table-hover .table-secondary:hover {
-    background-color: #cfd2d6
+    background-color:  #ccccff
 }
 
 .table-hover .table-secondary:hover>td,
 .table-hover .table-secondary:hover>th {
-    background-color: #cfd2d6
+    background-color:  #ccccff
 }
 
 .table-success,
